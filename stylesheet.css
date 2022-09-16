@@ -23,16 +23,13 @@ a{
     flex-wrap: wrap;
     align-items: center;
 }
-.vertical_line{
-    height: 30px;
-    border-left: 4px dotted gray;
-}
+
 
 .col-4.footer_Logo{
     text-align: center;
 }
 .col-4.contact{
-    float: left;
+    text-align: center;
 }
 .col-4.contact h2{
     display: inline-block;
@@ -85,6 +82,9 @@ svg.facebook{
   svg{
     
   }
+  footer{
+    background-color: dimgray;
+  }
   .test{
     border-radius: 12px;
     margin: 20px;
@@ -92,4 +92,17 @@ svg.facebook{
     height: 40px;
     width: 40px;
       background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+  }
+  .test1{
+    border-radius: 12px;
+    margin: 20px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+      background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+  }
+  .facebook{
+    margin: 2.5px;
+    color: white;
+    position: relative;
   }
