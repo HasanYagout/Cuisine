@@ -245,6 +245,7 @@ img.images:hover{
     }
     
    .b{
+    height: 400px;
     background-size: auto;
     background-image: url(../background.jpg);
    }
@@ -262,12 +263,9 @@ img.images:hover{
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
     0 2px 3px 0 rgba(0, 0, 0, 0.1) ;
     text-align: center;
-    width: 400px;
+    width: 300px;
    }
-   .b{
-    max-width: fit-content;
-    height: 400px;
-   }
+   
    img{
     max-width: 100%;
     height: auto;
