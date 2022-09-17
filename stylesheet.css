@@ -238,3 +238,33 @@ p{
 img.images:hover{
     transform: translate(7px,-7px);
 }
+
+@media screen and (max-width: 680px){
+    ul.navbar{
+        width: 100%;
+    }
+    
+   .b{
+    background-size: auto;
+    background-image: url(../background.jpg);
+   }
+   button{
+    margin: 50px 170px;
+   }
+   h1{
+    font-size: 20px;
+   }
+   .c{
+    display: block;
+   }
+   div.box{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 2px 3px 0 rgba(0, 0, 0, 0.1) ;
+    width: 400px;
+    text-align: center;
+   }
+   .b{
+    height: 400px;
+   }
+   
+}
