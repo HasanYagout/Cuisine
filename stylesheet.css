@@ -256,6 +256,7 @@ img.images:hover{
    }
    .c{
     display: block;
+    max-width: 100%;
    }
    div.box{
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
@@ -264,6 +265,7 @@ img.images:hover{
     text-align: center;
    }
    .b{
+    max-width: 100%;
     height: 400px;
    }
    
