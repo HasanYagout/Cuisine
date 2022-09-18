@@ -257,7 +257,7 @@ img.images:hover{
     transform: translate(7px,-7px);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     ul.navbar{
         width: 100%;
     }
@@ -289,4 +289,11 @@ display: block;
    .col-4{
 width: 100%;
    }
+}
+@media screen and (max-width:480px) {
+    
+    ul.navbar{
+        width: 100%;
+    }
+
 }
