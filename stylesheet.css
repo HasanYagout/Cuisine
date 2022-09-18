@@ -257,6 +257,23 @@ img.images:hover{
     transform: translate(7px,-7px);
 }
 
+
+@media screen and (max-width:320px) {
+    
+    ul.navbar{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    
+    ul.navbar{
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 600px){
     ul.navbar{
         width: 100%;
@@ -265,7 +282,7 @@ img.images:hover{
 
    }
    .first{
-
+    width: 520px;
    }
    .b{
     background-size: cover;
@@ -284,13 +301,24 @@ img.images:hover{
         margin: 100px 200px;
    }
    .c{
-display: block;
+    display: block;
+    width: 500px;
    }
    .col-4{
 width: 100%;
    }
 }
-@media screen and (max-width:480px) {
+
+
+
+@media screen and (max-width:768px) {
+    
+    ul.navbar{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:900px) {
     
     ul.navbar{
         width: 100%;
