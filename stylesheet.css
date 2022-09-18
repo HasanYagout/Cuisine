@@ -6,7 +6,21 @@
 
  }
  
- 
+ .first{
+    width: 100%;
+    height: 100%;
+ }
+ .navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #262626;
+ }
+ li{
+    display: inline-block;
+    margin: 40px;
+ }
+
+
  nav ul.navbar li {
     display: inline-block;
     
@@ -44,15 +58,19 @@ ul.navbar li a{
     text-transform: uppercase;
     color: white;
 }
-ul.navbar li a:hover{
+  a:hover{
 background-color: #BF9100;
 color: white;
 }
 
 a{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #BFBFBF;
     text-decoration: none;
-    padding: 14px;
     text-align: center;
+    text-transform: uppercase;
 }
 .row{
     width: 100%;
@@ -239,36 +257,36 @@ img.images:hover{
     transform: translate(7px,-7px);
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 500px){
     ul.navbar{
         width: 100%;
     }
-    
+   .navbar{
+
+   }
+   .first{
+
+   }
    .b{
-    height: 400px;
-    background-size: auto;
-    background-image: url(../background.jpg);
+    background-size: cover;
+    
    }
-   button{
-    margin: 50px 170px;
+   li{
+
+    margin: 40px 0px;
    }
-   h1{
-    font-size: 20px;
+   a{
+    font-size: 15px;
+    
+   }
+   
+   #button1{
+        margin: 100px 200px;
    }
    .c{
-    display: block;
-    max-width: fit-content;
+display: block;
    }
-   div.box{
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1) ;
-    text-align: center;
-    width: 300px;
+   .col-4{
+width: 100%;
    }
-   
-   img{
-    max-width: 100%;
-    height: auto;
-   }
-   
 }

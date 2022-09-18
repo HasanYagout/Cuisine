@@ -11,7 +11,7 @@ function myFunction() {
   
   
     
-   var o= document.getElementById("but").innerHTML = "شركة كوزين هي شركة يمنية متخصصة في صنع منتجات غذائية تتعلق بالمطبخ اليمني ومكوناته الفريدة. قمنا بصنع منتج بهارات للأكلات اليمنية الأصلية بثلاث نكهات هي (الزربيان العدني، السلتة والفحسة، الطبيخ) وهي ثلاث نكهات ضمنالعديد من النكهات التي تنوي الشركة انتاجها في المستقبل القريب، ويتميز المنتج بعبوته الصغيرة وطعمه الأصلي وسعره المنافس، كما أنه خالي تماما من المواد الحافظة . ";
+   var o= document.getElementById("but").innerHTML ="شركة كوزين هي شركة يمنية متخصصة في صنع منتجات غذائية تتعلق بالمطبخ اليمني ومكوناته الفريدة. قمنا بصنع منتج بهارات للأكلات اليمنية الأصلية بثلاث نكهات هي (الزربيان العدني، السلتة والفحسة، الطبيخ) وهي ثلاث نكهات ضمنالعديد من النكهات التي تنوي الشركة انتاجها في المستقبل القريب، ويتميز المنتج بعبوته الصغيرة وطعمه الأصلي وسعره المنافس، كما أنه خالي تماما من المواد الحافظة . ";
    var element = document.querySelector('#but');
    document.getElementById("but").style.color='white';
    document.getElementById("but").style.textAlign='center';
@@ -26,23 +26,33 @@ function myFunction() {
 </script>
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-           <img id="logo" src="logo.png">
-            <li><a href="index.html">home</a> </li>
-            <li><a href="#">news</a> </li>
-               <li><a href="#">contact</a> </li>
-               <li><a href="#">about</a> </li>
-            </ul>
-    </nav> 
+        <div class="first">
 
-<div class="b" id="t">
-<h1 class="head_one">Cuisine</h1> <br> 
-<h1 class="head_two"> Spice it up</h1>
-  <p id="but" > </p>
-        <button  onclick="myFunction()" >Learn More</button>
+          <div class="navbar">
+            <ul>
+              <img id="logo" src="logo.png">
+               <li><a href="index.html">home</a> </li>
+               <li><a href="#">news</a> </li>
+                  <li><a href="#">contact</a> </li>
+                  <li><a href="#">about</a> </li>
+               </ul>
+  
+          </div>
 
-</div>
+          <div class="b" id="t">
+            <h1 class="head_one">Cuisine</h1> <br> 
+            <h1 class="head_two"> Spice it up</h1>
+              <p id="but" > </p>
+                    <button id="button1"  onclick="myFunction()" >Learn More</button>
+            
+            </div>
+
+            
+        </div>
+        
+    
+
+
 
 
 <hr>
