@@ -257,7 +257,7 @@ img.images:hover{
     transform: translate(7px,-7px);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
     ul.navbar{
         width: 100%;
     }
