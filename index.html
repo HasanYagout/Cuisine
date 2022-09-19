@@ -8,18 +8,26 @@
 
 
 function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("button1");
+  var par=document.getElementById('para');
   
-  
-    
-   var o= document.getElementById("but").innerHTML ="شركة كوزين هي شركة يمنية متخصصة في صنع منتجات غذائية تتعلق بالمطبخ اليمني ومكوناته الفريدة. قمنا بصنع منتج بهارات للأكلات اليمنية الأصلية بثلاث نكهات هي (الزربيان العدني، السلتة والفحسة، الطبيخ) وهي ثلاث نكهات ضمنالعديد من النكهات التي تنوي الشركة انتاجها في المستقبل القريب، ويتميز المنتج بعبوته الصغيرة وطعمه الأصلي وسعره المنافس، كما أنه خالي تماما من المواد الحافظة . ";
-   var element = document.querySelector('#but');
-   document.getElementById("but").style.color='white';
-   document.getElementById("but").style.textAlign='center';
-    element.style.backgroundColor = '#262626';
-    
-    
 
   
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+    par.style.backgroundColor='transparent';
+    
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+    par.style.backgroundColor='#262626';
+  }
 }
 
 
@@ -42,7 +50,12 @@ function myFunction() {
           <div class="b" id="t">
             <h1 class="head_one">Cuisine</h1> <br> 
             <h1 class="head_two"> Spice it up</h1>
-              <p id="but" > </p>
+
+            <p id="para" > <span id="dots">...</span>شركة كوزين هي شركة يمنية متخصصة في صنع منتجات غذائية تتعلق بالمطبخ اليمني ومكوناته الفريدة.<span id="more">قمنا بصنع منتج بهارات للأكلات اليمنية الأصلية بثلاث نكهات هي (الزربيان العدني، السلتة والفحسة، الطبيخ) 
+                وهي ثلاث نكهات ضمنالعديد من النكهات التي تنوي الشركة انتاجها في المستقبل القريب،
+                 ويتميز المنتج بعبوته الصغيرة وطعمه الأصلي وسعره المنافس، كما أنه خالي تماما من المواد الحافظة
+       </span></p>
+                
                     <button id="button1"  onclick="myFunction()" >Learn More</button>
             
             </div>
@@ -51,8 +64,6 @@ function myFunction() {
         </div>
         
     
-
-
 
 
 <hr>
