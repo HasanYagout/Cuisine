@@ -265,14 +265,82 @@ img.images:hover{
     ul.navbar{
         width: 100%;
     }
+   .navbar{
 
+   }
+   .first{
+    width: 520px;
+   }
+   .b{
+    background-size: cover;
+    
+   }
+   li{
+
+    margin: 40px 0px;
+   }
+   a{
+    font-size: 15px;
+    
+   }
+   
+   #button1{
+        margin: 0px 200px;
+   }
+   .c{
+    display: block;
+    width: 500px;
+   }
+   .col-4{
+width: 100%;
+   }
+   p{
+   
+    margin: 0px;
+
+
+   }
 }
 
 @media screen and (max-width:400px) {
-    
     ul.navbar{
         width: 100%;
     }
+   .navbar{
+
+   }
+   .first{
+    width: 520px;
+   }
+   .b{
+    background-size: cover;
+    
+   }
+   li{
+
+    margin: 40px 0px;
+   }
+   a{
+    font-size: 15px;
+    
+   }
+   
+   #button1{
+        margin: 0px 200px;
+   }
+   .c{
+    display: block;
+    width: 500px;
+   }
+   .col-4{
+width: 100%;
+   }
+   p{
+   
+    margin: 0px;
+
+
+   }
 
 }
 
@@ -310,10 +378,9 @@ img.images:hover{
 width: 100%;
    }
    p{
-<<<<<<< HEAD
+   
     margin: 0px;
-=======
->>>>>>> 9b5b55bf275a077bd431753837482b48f1193cd1
+
 
    }
 }
@@ -325,19 +392,87 @@ width: 100%;
     ul.navbar{
         width: 100%;
     }
+   .navbar{
 
+   }
+   .first{
+    width: 520px;
+   }
+   .b{
+    background-size: cover;
+    
+   }
+   li{
+
+    margin: 40px 0px;
+   }
+   a{
+    font-size: 15px;
+    
+   }
+   
+   #button1{
+        margin: 0px 200px;
+   }
+   .c{
+    display: block;
+    width: 500px;
+   }
+   .col-4{
+width: 100%;
+   }
+   p{
+   
+    margin: 0px;
+
+
+   }
 }
 @media screen and (max-width:900px) {
-    
     ul.navbar{
         width: 100%;
     }
+   .navbar{
+
+   }
+   .first{
+    width: 520px;
+   }
+   .b{
+    background-size: cover;
+    
+   }
+   li{
+
+    margin: 40px 0px;
+   }
+   a{
+    font-size: 15px;
+    
+   }
+   
+   #button1{
+        margin: 0px 200px;
+   }
+   .c{
+    display: block;
+    width: 500px;
+   }
+   .col-4{
+width: 100%;
+   }
+   p{
+   
+    margin: 0px;
+
+
+   }
 
 }
 #more{
     display: none;
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 9b5b55bf275a077bd431753837482b48f1193cd1
+
+
+
