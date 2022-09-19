@@ -310,7 +310,10 @@ img.images:hover{
 width: 100%;
    }
    p{
+<<<<<<< HEAD
     margin: 0px;
+=======
+>>>>>>> 9b5b55bf275a077bd431753837482b48f1193cd1
 
    }
 }
@@ -333,4 +336,8 @@ width: 100%;
 }
 #more{
     display: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9b5b55bf275a077bd431753837482b48f1193cd1
