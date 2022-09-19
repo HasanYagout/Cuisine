@@ -1,5 +1,4 @@
-
- *
+*
  {
     padding: 0%;
     margin: 0%;
@@ -11,6 +10,7 @@
     height: 100%;
  }
  .navbar{
+    text-align: center;
     height: 100px;
     width: 100%;
     background-color: #262626;
@@ -59,6 +59,7 @@ ul.navbar li a{
     color: white;
 }
   a:hover{
+    border-radius: 20px;
 background-color: #BF9100;
 color: white;
 }
@@ -197,7 +198,7 @@ svg.facebook{
 }
 button{
     width: max-content;
-    margin: 100px 700px;
+    margin: 0px 700px;
     font-weight: bold;
     color: #BF9100;
     background: transparent;
@@ -247,7 +248,8 @@ div.box{
     width: 200px;
 }
 p{
-    
+    margin: 30px 90px;
+    text-align: center;
     color: #BFBFBF;
     font-size: 30px;
     font-weight: bold;
@@ -266,7 +268,7 @@ img.images:hover{
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:400px) {
     
     ul.navbar{
         width: 100%;
@@ -298,7 +300,7 @@ img.images:hover{
    }
    
    #button1{
-        margin: 100px 200px;
+        margin: 0px 200px;
    }
    .c{
     display: block;
@@ -306,6 +308,10 @@ img.images:hover{
    }
    .col-4{
 width: 100%;
+   }
+   p{
+    margin: 0px;
+
    }
 }
 
@@ -324,4 +330,7 @@ width: 100%;
         width: 100%;
     }
 
+}
+#more{
+    display: none;
 }
