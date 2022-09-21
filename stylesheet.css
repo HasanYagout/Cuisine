@@ -617,6 +617,7 @@ color: #BF9100;
     }
     li{
         margin: 0px;
+        float: left;
     }
    
     footer{
@@ -626,6 +627,7 @@ color: #BF9100;
         width: 100vw;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     body{
         
@@ -639,7 +641,7 @@ color: #BF9100;
     a{
        
         padding: 10px;
-        font-size: 8px;
+        font-size: 12px;
     }
     .c{
         display: block;
@@ -662,7 +664,7 @@ color: #BF9100;
     #button_div{
         width: 25vw;
     DISPLAY: block;
-    margin: 0px auto
+    margin: 20px auto
     }
     .footer_links a{
     font-size: 8px;
@@ -688,6 +690,17 @@ width: 2vw;
     }
     .navbar li{
         margin: 5vw 2vw;
+    }
+    #para{
+        width: 70vw;
+    }
+    p#para{
+        width: 50vw;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    h1{
+        font-size: 60px;
     }
 
 }
