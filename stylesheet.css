@@ -66,7 +66,7 @@ color: white;
 }
 
 a{
-    padding: 10px;
+   padding: 10px;
     font-size: 20px;
     font-weight: bold;
     color: #BF9100;
@@ -242,6 +242,9 @@ img.images:hover{
 }
 
 
+
+/* 
+
 @media screen and (max-width:320px) {
     
     ul.navbar{
@@ -282,7 +285,20 @@ width: 100%;
 
 
    }
+   
+   footer{
+    width: 100%;
+   }
+
+   .first_f{
+    width: 500px;
+   }
+
 }
+
+
+
+
 
 @media screen and (max-width:400px) {
     ul.navbar{
@@ -324,7 +340,19 @@ width: 100%;
 
    }
 
+   footer{
+    width: 100%;
+   }
+   .first_f{
+    width: 500px;
+   }
+
 }
+
+
+
+
+
 
 @media screen and (max-width: 600px){
     ul.navbar{
@@ -365,7 +393,20 @@ width: 100%;
 
 
    }
+
+   footer{
+    width: 100%;
+   }
+
+   .first_f{
+    width: 500px;
+   }
+
 }
+
+
+
+
 
 
 
@@ -409,7 +450,21 @@ width: 100%;
 
 
    }
+   footer{
+    width: 100%;
+   }
+
+   .first_f{
+    width: 500px;
+   }
+
 }
+
+
+
+
+
+
 @media screen and (max-width:900px) {
     ul.navbar{
         width: 100%;
@@ -449,15 +504,27 @@ width: 100%;
 
 
    }
+   
+   footer{
+    width: 500px;
+   }
+   .first_f{
+    width: 500px;
+   }
 
 }
+ */
+
+
+
+
 #more{
     display: none;
 
 }
 .footer_links{
     float: left;
-    margin: 0px 110px;
+    
     display: inline-block;
     text-align: center;
     width: 900px;
@@ -471,22 +538,27 @@ width: 100%;
 }
 .right_footer{
     float: right;
-    
-    width: 300px;
+    padding: 30px;
 }
 h2{
+    color: #BF9100;
     display: inline-block;
 }
 svg.bi.bi-telephone-fill{
     display: inline-block;
+    margin-right: 4px;
+    color: #BFBFBF;
 }
 .first_f{
+    
     width: 1520px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
 }
 p.para2{
     padding: 0px;
     margin: 0px;
+    display: inline-block;
 }
 
 svg.facebook,svg.instagram,svg.youtube{
@@ -514,4 +586,109 @@ em{
 }
 p#para{
     color: white;
+}
+
+svg.bi.bi-envelope{
+    display: inline-block;
+    margin-right: 4px;
+    color: #BFBFBF;
+}
+.para2 a{
+    padding: 0px;
+}
+.right_footer a{
+    padding: 0px;
+  
+    
+}
+.right_footer a:hover{
+background-color: transparent;
+color: #BF9100;
+}
+.box p{
+    margin: 0px;
+}
+
+
+@media  screen and (max-width:500px) {
+    .navbar{
+        width: 100vw;
+    }
+    li{
+        margin: 0px;
+    }
+    a{
+
+    }
+    footer{
+        width: 100vw;
+    }
+    .first_f{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+    body{
+        
+        width: 100vw;
+    }
+    #button1{
+    
+        width: 25vw;
+        margin: 0px;
+    }
+    a{
+       
+        padding: 10px;
+        font-size: 15px;
+    }
+    .c{
+        display: block;
+        width: 100vw;
+    }
+    .col-4{
+        width: 80vw;
+        margin: 0px auto;
+
+    }
+    .b{
+
+    }
+    .first{
+
+    }
+    button{
+
+    }
+    #button_div{
+        width: 25vw;
+    DISPLAY: block;
+    margin: 0px auto
+    }
+    .footer_links a{
+    font-size: 8px;
+    padding: 10px;
+    }
+    .right_footer{
+        padding: 10px;
+    }
+    #logo{
+        width: 15vw;
+    }
+    .right_footer a{
+        font-size: 10px;
+    }
+    .footer_links{
+width: 45vw;
+    }
+    svg.bi.bi-telephone-fill {
+        width: 2vw;
+    }
+    svg.bi.bi-envelope{
+width: 2vw;
+    }
+    .navbar li{
+        margin: 5vw 2vw;
+    }
+
 }
