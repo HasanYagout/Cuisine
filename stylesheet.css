@@ -613,13 +613,12 @@ color: #BF9100;
 @media  screen and (max-width:500px) {
     .navbar{
         width: 100vw;
+        height: 80px;
     }
     li{
         margin: 0px;
     }
-    a{
-
-    }
+   
     footer{
         width: 100vw;
     }
@@ -640,7 +639,7 @@ color: #BF9100;
     a{
        
         padding: 10px;
-        font-size: 15px;
+        font-size: 8px;
     }
     .c{
         display: block;
