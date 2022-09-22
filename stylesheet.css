@@ -32,7 +32,7 @@ background-color: #262626;
     margin: 0%;
     padding: 0%;
 }
-#logo{
+#navbar_logo{
     width: 100px;
     float: left;
 }
@@ -523,11 +523,10 @@ width: 100%;
 
 }
 .footer_links{
-    float: left;
-    
+    /* float: left; */
     display: inline-block;
     text-align: center;
-    width: 900px;
+    /* width: 900px; */
 }
 .icons{
     text-align: center;
@@ -617,7 +616,7 @@ color: #BF9100;
     }
     li{
         margin: 0px;
-        float: left;
+      
     }
    
     footer{
@@ -625,9 +624,7 @@ color: #BF9100;
     }
     .first_f{
         width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
     }
     body{
         
@@ -671,16 +668,28 @@ color: #BF9100;
     padding: 10px;
     }
     .right_footer{
-        padding: 10px;
+        padding: 0px;
+    
+        float: none;
+        text-align: center;
     }
     #logo{
+        float: none;
+        display: block;
         width: 15vw;
+        margin: 0px auto;
     }
     .right_footer a{
         font-size: 6px;
+        position: relative;
+        top: -5px;
     }
     .footer_links{
-width: 45vw;
+        text-align: center;
+        display: block;
+        padding: 20px;
+        float: none;
+       
     }
     svg.bi.bi-telephone-fill {
         width: 2vw;
@@ -695,12 +704,32 @@ width: 2vw;
         width: 70vw;
     }
     p#para{
-        width: 50vw;
-        font-size: 20px;
-        line-height: 1.2;
+        width: 40vw;
+        font-size: 12px;
+        line-height: 2
     }
     h1{
         font-size: 60px;
     }
-
+    .icons{
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+.copyright{
+    padding: 20px;
+    text-align: center;
+}
+#phone_div{
+    width: 30vw;
+    display: inline-block;
+}
+#email_div{
+    width: 30vw;
+    display: inline-block;
+}
+#navbar_logo{
+    float: left;
+    width: 15vw;
+}
 }
