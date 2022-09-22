@@ -659,12 +659,11 @@ color: #BF9100;
 
     }
     #button_div{
-        position: absolute;
+        position: relative;
         width: 25vw;
         DISPLAY: block;
         margin: 20px auto;
-        top: 620px;
-        left: 177px;
+        
     }
     .footer_links a{
     font-size: 8px;
@@ -707,6 +706,7 @@ width: 2vw;
         width: 70vw;
     }
     p#para{
+        position: relative;
         width: 45vw;
         font-size: 12px;
         line-height: 2
