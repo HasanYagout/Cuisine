@@ -659,9 +659,12 @@ color: #BF9100;
 
     }
     #button_div{
+        position: absolute;
         width: 25vw;
-    DISPLAY: block;
-    margin: 20px auto
+        DISPLAY: block;
+        margin: 20px auto;
+        top: 620px;
+        left: 177px;
     }
     .footer_links a{
     font-size: 8px;
