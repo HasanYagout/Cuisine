@@ -60,10 +60,11 @@ ul.navbar li a{
     color:#BF9100;
 }
   a:hover{
+
     border-radius: 20px;
 background-color: #BF9100;
 color: white;
-text-decoration: underline;
+text-decoration: none;
 }
 
 a{
@@ -327,6 +328,7 @@ svg.bi.bi-envelope{
     
 }
 .right_footer a:hover{
+    text-decoration: none;
 background-color: transparent;
 color: #BF9100;
 }
@@ -343,6 +345,9 @@ color: #BF9100;
     li{
         margin: 0px;
       
+    }
+    a:hover{
+        text-decoration: none;
     }
    
     footer{
