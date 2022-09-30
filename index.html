@@ -42,8 +42,11 @@ function list_button()
             x.className+=" responsive";
             
         }
-        else{
-            x.className==="navbar";
+        else if(x.className==="navbar responsive"){
+          x.className="navbar"
+        }
+        else {
+            x.className==="navbar ";
         }
 }
 
@@ -51,7 +54,7 @@ function list_button()
 </script>
 </head>
 <body>
-        <div class="first">
+       
           <div class="navbar" id="dropdownclick">
             <ul>
               <img id="navbar_logo"src="logo.png">
@@ -81,7 +84,7 @@ function list_button()
             </div>
 
             
-        </div>
+        
         
     
 

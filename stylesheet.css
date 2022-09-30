@@ -477,11 +477,11 @@ color: #BF9100;
 }
 .navbar.responsive{
     display: inline-block;
-    height: 260px;
+    height: 300px;
 }
 .navbar.responsive li a{
     display: block;
-    text-align: left ;
+    font-size: 20px;
 }
 .navbar.responsive img#navbar_logo{
    display: block;
