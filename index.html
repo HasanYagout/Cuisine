@@ -14,9 +14,6 @@ function myFunction() {
   var btnText = document.getElementById("button1");
   var par=document.getElementById('para');
   
-  
-
-  
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -36,22 +33,35 @@ function myFunction() {
 
  
 }
+function list_button()
+{
+
+  var x=document.getElementById('dropdownclick');
+        if(x.className==="navbar")
+        {
+            x.className+=" responsive";
+            
+        }
+        else{
+            x.className==="navbar";
+        }
+}
 
 
 </script>
 </head>
 <body>
         <div class="first">
-
-          <div class="navbar">
+          <div class="navbar" id="dropdownclick">
             <ul>
               <img id="navbar_logo"src="logo.png">
-               <li><a href="index.html">home</a> </li>
-               <li><a href="#">news</a> </li>
-                  <li><a href="#">contact</a> </li>
-                  <li><a href="#">about</a> </li>
-               </ul>
-  
+               <li class="navbar_links" ><a href="index.html">home</a> </li>
+               <li class="navbar_links" ><a href="#">news</a> </li>
+               <li class="navbar_links" ><a  href="#">contact</a> </li>
+               <li class="navbar_links" ><a href="#">about</a> </li>
+               <li class="navbar_links" ><a  href="#">shop</a></li>
+               <li class="dropdownicon"><a href="javascript:void(0);" onclick="list_button()">&#9776;</a></li>
+             </ul>
           </div>
 
           <div class="b" id="t">

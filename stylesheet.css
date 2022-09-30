@@ -1,5 +1,6 @@
 *
  {
+    box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 
@@ -14,6 +15,9 @@
     height: 100px;
     width: 100%;
     background-color: #262626;
+ }
+ .bi.bi-list{
+    display: none;
  }
  li{
     display: inline-block;
@@ -380,15 +384,7 @@ color: #BF9100;
         margin: 0px auto;
 
     }
-    .b{
-
-    }
-    .first{
-
-    }
-    button{
-
-    }
+    
     #button_div{
         position: relative;
         width: 25vw;
@@ -428,10 +424,10 @@ color: #BF9100;
         width: 2vw;
     }
     svg.bi.bi-envelope{
-width: 2vw;
+        width: 2vw;
     }
-    .navbar li{
-        margin: 5vw 2vw;
+    .navbar_links a{
+       display: none;
     }
     #para{
         width: 70vw;
@@ -466,5 +462,37 @@ width: 2vw;
 #navbar_logo{
     float: left;
     width: 15vw;
+}
+.bi.bi-list{
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+.navbar li{
+    float: right;
+}
+.navbar.responsive li{
+    display: inline;
+    float: none;
+}
+.navbar.responsive{
+    display: inline-block;
+    height: 260px;
+}
+.navbar.responsive li a{
+    display: block;
+    text-align: left ;
+}
+.navbar.responsive img#navbar_logo{
+   display: block;
+   float: none; 
+}
+li.dropdownicon{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.dropdownicon a {
+    font-size: 30px;
 }
 }
