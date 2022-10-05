@@ -11,14 +11,26 @@
     height: 100%;
  }
  .navbar{
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px 0 rgb(0 0 0 / 10%);
     text-align: center;
     height: 100px;
     width: 100%;
     background-color: #262626;
  }
+ img#navbar_logo_responsive {
+    display: none;
+}
+ li.dropdownicon{
+    display: none;
+ }
  .bi.bi-list{
     display: none;
  }
+ ul.first_ul{
+    width: 40vw;
+    float: left;
+}
+
  li{
     display: inline-block;
     margin: 40px;
@@ -38,7 +50,7 @@ background-color: #262626;
 }
 #navbar_logo{
     width: 100px;
-    float: left;
+   
 }
 img{
     width: 100px;
@@ -63,12 +75,26 @@ ul.navbar li a{
     text-transform: uppercase;
     color:#BF9100;
 }
+a#accounticon {
+    margin: auto;
+    width: 50px;
+}
   a:hover{
-
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
     border-radius: 20px;
-background-color: #BF9100;
-color: white;
-text-decoration: none;
+    background-color: #BF9100;
+    color: white;
+    text-decoration: none;
+}
+
+ul.second_ul{
+    display: inline-block;
+    float: right;
+    width: 700px;
 }
 
 a{
@@ -205,7 +231,7 @@ p#but{
 .b{
     background-repeat: no-repeat;
     background-size: cover;
-   background-image: url(background.jpg);
+   background-image: url(../Cuisine/istockphoto-1298434383-612x612.jpg);
     height: 700px;
 }
 h1{
@@ -346,6 +372,9 @@ color: #BF9100;
         width: 100vw;
         height: 80px;
     }
+    li.dropdownicon{
+        display: inline;
+    }
     li{
         margin: 0px;
       
@@ -360,6 +389,9 @@ color: #BF9100;
     .first_f{
         width: 100vw;
         display: block;
+    }
+    img#navbar_logo_responsive {
+        display: none;
     }
     body{
         
@@ -462,6 +494,7 @@ color: #BF9100;
 #navbar_logo{
     float: left;
     width: 15vw;
+    display: none;
 }
 .bi.bi-list{
     display: inline-block;
@@ -471,21 +504,37 @@ color: #BF9100;
 .navbar li{
     float: right;
 }
+li.account_icon {
+    display: none;
+}
 .navbar.responsive li{
     display: inline;
     float: none;
 }
 .navbar.responsive{
     display: inline-block;
-    height: 300px;
+    height: 360px;
 }
 .navbar.responsive li a{
     display: block;
     font-size: 20px;
 }
+ul.first_ul{
+    width: 40vw;
+    float: none;
+    margin: auto;
+}
 .navbar.responsive img#navbar_logo{
-   display: block;
+   display: none;
    float: none; 
+
+}
+img#navbar_logo_responsive{
+    display: block;
+    width: 15vw;
+}
+ul.second_ul{
+    width: 40vw;
 }
 li.dropdownicon{
     top: 0px;
@@ -495,4 +544,130 @@ li.dropdownicon{
 .dropdownicon a {
     font-size: 30px;
 }
+
+ul.second_ul{
+    width: 40vw;
+    float: none;
+}
+
+}
+
+
+
+
+
+
+
+.content{
+    display: block;
+    width: 430px;
+    border-radius: 10px;
+    padding: 40px 30px;
+    margin: 100px auto;
+    box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgb(147 149 151 / 67%);
+}
+#login_head{
+   margin: 20px;
+    display: block;
+    font-size: 70px;
+    text-align: center;
+    color: #BF9100;
+}
+
+h1#signup_head{
+    display: block;
+    font-size: 67px;
+    text-align: center;
+    color: #BF9100;
+}
+.content .field{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #e0d2d2;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    border-radius: 8px;
+    background: rgba(105, 105, 105, 0);
+  }
+
+  .field input::placeholder{
+    color: #e0d2d2a6;
+  }
+  
+  .field:nth-child(2){
+    margin-top: 20px;
+  }
+  
+  .field span{
+    margin-left: 15px;
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: #ffffff;
+  }
+  button.sign_up_button,button.login_button{
+    margin: 25px 0 0 0;
+    width: 40%;
+    height: 50px;
+    color: #BF9100;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.438);
+    border-radius: 8px;
+    background: rgba(105, 105, 105, 0);
+    margin-top: 40px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+   
+  }
+  
+  button.login_button{
+    margin-right: 70px;
+  }
+ form{
+    margin-top: 30px;
+ }
+ body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+ }
+ .login_button:hover,.sign_up_button:hover{
+    background-color:rgba(255, 255, 255, 0.1) ;
+  }
+
+
+li.account_icon{
+    margin-left: 190px;
+}
+
+.f button {
+    margin: 0px 20px;
+    width: fit-content;
+}
+.f{
+    padding: 30px;
+    text-align: center;
+}
+
+
+#navbar_logo:hover{
+transform: rotateY(180deg);
+-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
 }
