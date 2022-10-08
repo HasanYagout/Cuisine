@@ -461,6 +461,7 @@ color: #BF9100;
     }
     div#r{
         height: fit-content;
+        width: 70vw;
     }
     .b{
         height: 100vh;
@@ -521,7 +522,7 @@ color: #BF9100;
     text-align: center;
 }
 #phone_div{
-    width: 30vw;
+    width: 80vw;
     display: block;
 }
 #email_div{
@@ -542,9 +543,7 @@ color: #BF9100;
     float: right;
     
 }
-#navbar_links{
-    display: none;
-}
+
 li.account_icon {
     display: none;
 }
