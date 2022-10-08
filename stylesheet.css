@@ -30,12 +30,35 @@
     width: 40vw;
     float: left;
 }
+div#r {
+    width: 60vw;
+    height: 85vh;
+   margin: auto;
+    backdrop-filter: saturate(0.5) blur(10px);
+}
 
  li{
     display: inline-block;
+    position: relative;
     margin: 40px;
  }
+ li:after {
+	content: '';
+	display: block;
+	/* margin: auto; */
+	height: 1px;
+	width: 0px;
+	background: transparent;
+	transition: width 0.8s ease, background-color .5s ease;
+}
 
+li:hover:after {
+	width: 100%;
+	background: #BF8100;
+}
+.col-4 ul li:hover:after{
+    width: 100%;
+}
 
  nav ul.navbar li {
     display: inline-block;
@@ -79,17 +102,12 @@ a#accounticon {
     margin: auto;
     width: 50px;
 }
-  a:hover{
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-    border-radius: 20px;
-    background-color: #BF9100;
-    color: white;
-    text-decoration: none;
+div#button_div {
+    margin: auto;
+    width: 10vw;
 }
+ 
+
 
 ul.second_ul{
     display: inline-block;
@@ -98,19 +116,23 @@ ul.second_ul{
 }
 
 a{
-   padding: 10px;
     font-size: 20px;
     font-weight: bold;
     color: #BF9100;
     text-decoration: none;
+   
     text-align: center;
     text-transform: uppercase;
+    
 }
+
+
 .row{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+
 }
 
 
@@ -167,7 +189,8 @@ footer div.col-12{
   }
   footer{
     background-color: #262626;
-    height: 3   00px;
+    padding: 20px;
+   
   }
   .test{
     border-radius: 12px;
@@ -211,8 +234,8 @@ footer div.col-12{
     flex-wrap: wrap;
 }
 button{
-    width: max-content;
-    margin: 0px 700px;
+    width: inherit;
+   border-radius: 20px;
     font-weight: bold;
     color: #BF9100;
     background: transparent;
@@ -231,7 +254,8 @@ p#but{
 .b{
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(315deg, hsla(0, 0%, 15%, 1) 39%, hsla(46, 100%, 37%, 1) 100%);
+    /* background: linear-gradient(315deg, hsla(0, 0%, 15%, 1) 39%, hsla(46, 100%, 37%, 1) 100%); */
+    background-image: url(../Cuisine/istockphoto-1298434383-612x612.jpg);
     height: 700px;
 }
 h1{
@@ -252,10 +276,12 @@ div.box{
     text-align: center;
     padding: 36px 24px 40px 24px;
     background-color: #fff;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1) ;
+    box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgb(147 149 151 / 67%);
+    
 }
+
 .c{
+    
     display: flex;
 }
 .images{
@@ -280,10 +306,9 @@ img.images:hover{
 
 }
 .footer_links{
-    /* float: left; */
+    
     display: inline-block;
-    text-align: center;
-    /* width: 900px; */
+   
 }
 .icons{
     text-align: center;
@@ -304,12 +329,11 @@ svg.bi.bi-telephone-fill{
     display: inline-block;
     margin-right: 4px;
     color: #BFBFBF;
+    width: 2vw;
 }
-.first_f{
-    
-    width: 1520px;
-    display: flex;
-    justify-content: space-evenly;
+
+.footer_links ul li{
+    display: block;
 }
 p.para2{
     padding: 0px;
@@ -333,7 +357,7 @@ em{
     color: #BF9100;
 }
 .para2 a{
-    background-color: transparent;
+    
     
 }
 
@@ -351,6 +375,7 @@ svg.bi.bi-envelope{
 }
 .para2 a{
     padding: 0px;
+    background-color: transparent;
 }
 .right_footer a{
     padding: 0px;
@@ -400,12 +425,12 @@ color: #BF9100;
     #button1{
     
         width: 25vw;
-        margin: 0px;
+        margin-bottom: 20px;
     }
     a{
        
-        padding: 10px;
-        font-size: 12px;
+       padding: 10px;
+        font-size: 20px;
     }
     .c{
         display: block;
@@ -417,7 +442,7 @@ color: #BF9100;
 
     }
     
-    #button_div{
+    div#button_div{
         position: relative;
         width: 25vw;
         DISPLAY: block;
@@ -433,6 +458,12 @@ color: #BF9100;
     
         float: none;
         text-align: center;
+    }
+    div#r{
+        height: fit-content;
+    }
+    .b{
+        height: 100vh;
     }
     #logo{
         float: none;
@@ -453,10 +484,11 @@ color: #BF9100;
        
     }
     svg.bi.bi-telephone-fill {
-        width: 2vw;
+        width: 6vw;
     }
+    
     svg.bi.bi-envelope{
-        width: 2vw;
+        width: 6vw;
     }
     .navbar_links a{
        display: none;
@@ -465,11 +497,16 @@ color: #BF9100;
         width: 70vw;
     }
     p#para{
-        left: -20px;
-        position: relative;
-        width: 75vw;
-        font-size: 12px;
-        line-height: 2
+        display: inline;
+    margin: 12px;
+    /* left: -112px; */
+    position: relative;
+    font-size: 12px;
+    line-height: 2;
+    padding: 10px;
+    }
+    span#dots {
+        margin: 130px;
     }
     h1{
         font-size: 60px;
@@ -485,11 +522,11 @@ color: #BF9100;
 }
 #phone_div{
     width: 30vw;
-    display: inline-block;
+    display: block;
 }
 #email_div{
-    width: 30vw;
-    display: inline-block;
+    width: 80vw;
+    display: block;
 }
 #navbar_logo{
     float: left;
@@ -503,6 +540,10 @@ color: #BF9100;
 }
 .navbar li{
     float: right;
+    
+}
+#navbar_links{
+    display: none;
 }
 li.account_icon {
     display: none;
@@ -520,9 +561,12 @@ li.account_icon {
     font-size: 20px;
 }
 ul.first_ul{
-    width: 40vw;
+    width: 24vw;
     float: none;
     margin: auto;
+}
+ul.second_ul li.dropdownicon:hover::after {
+border: 0px;
 }
 .navbar.responsive img#navbar_logo{
    display: none;
@@ -536,20 +580,37 @@ img#navbar_logo_responsive{
 ul.second_ul{
     width: 40vw;
 }
-li.dropdownicon{
+a.dropdownicon {
     top: 0px;
     right: 0px;
     position: absolute;
+    font-size: 30px;
 }
 .dropdownicon a {
-    font-size: 30px;
+    
 }
 
 ul.second_ul{
-    width: 40vw;
+    width: 24vw;
     float: none;
 }
 
+svg.bi.bi-geo-alt{
+    width: 6vw;
+    
+}
+.location_div h2{
+    font-size: 20px;
+    position: relative;
+    font-size: 20px;
+    bottom: 8px;
+}
+#phone_div a{
+    padding: 0px;
+}
+.head_two {
+    margin-bottom: 20px;
+}
 }
 
 
@@ -560,10 +621,10 @@ ul.second_ul{
 
 .content{
     display: block;
-    width: 430px;
+    width: 22vw;
     border-radius: 10px;
     padding: 40px 30px;
-    margin: 100px auto;
+    margin: 0px auto;
     box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgb(147 149 151 / 67%);
 }
 #login_head{
@@ -670,4 +731,52 @@ transform: rotateY(180deg);
 -ms-transition: all 500ms ease;
 -o-transition: all 500ms ease;
 transition: all 500ms ease;
+animation: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.fotter_logo{
+    display: block;
+    text-align: center;
+}
+
+.login_form {
+    float: right;
+    width: 22vw;
+    display: inline-block;
+}
+
+.phone_div{
+    margin-bottom: 20px;
+}
+.row .col-4 ul li{
+display: table;
+margin: 10px;
+
+}
+.row .col-4 ul li a{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.row .col-4 h1{
+    font-size: 20px;
+    color: white;
+    text-align: start;
+    padding: 10px;
+   
+}
+
+
+
+svg.bi.bi-geo-alt {
+    display: inline-block;
+    color: white;
+}
+button#button1:active{
+transition: all 4s;
+}
+.location_div{
+    margin-bottom: 20px;
+}
+#phone_div{
+    margin-bottom: 20px;
 }
