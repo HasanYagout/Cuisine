@@ -574,7 +574,7 @@ border: 0px;
 }
 img#navbar_logo_responsive{
     display: block;
-    width: 15vw;
+    width: 20vw;
 }
 ul.second_ul{
     width: 40vw;
@@ -583,7 +583,7 @@ a.dropdownicon {
     top: 0px;
     right: 0px;
     position: absolute;
-    font-size: 30px;
+    font-size: 50px;
 }
 .dropdownicon a {
     
