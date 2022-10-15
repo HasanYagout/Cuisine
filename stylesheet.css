@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+    
 
  }
  
@@ -125,6 +126,9 @@ a{
     text-transform: uppercase;
     
 }
+a.dropdownicon {
+   display: none;
+}
 
 
 .row{
@@ -228,6 +232,7 @@ footer div.col-12{
 }
 
 .col-12{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,6 +477,10 @@ color: #BF9100;
         width: 15vw;
         margin: 0px auto;
     }
+    a#accounticon {
+        padding: 0px;
+        
+    }
     .right_footer a{
         font-size: 6px;
         position: relative;
@@ -580,14 +589,13 @@ ul.second_ul{
     width: 40vw;
 }
 a.dropdownicon {
+    display: block;
     top: 0px;
     right: 0px;
     position: absolute;
     font-size: 50px;
 }
-.dropdownicon a {
-    
-}
+
 
 ul.second_ul{
     width: 24vw;
@@ -614,18 +622,48 @@ svg.bi.bi-geo-alt{
 
 
 
+input[type="checkbox"] {
+    margin-right: 5px;
+}
 
-
-
+.remember_me{
+    margin: 20px 0px;
+    text-align: start;
+    
+}
+.forget_password{
+    margin: 25px 0px;
+    display: block;
+    text-align: start;
+}
 
 .content{
+    height: 80vh;
+    background-color: white;
+    overflow: hidden;
     display: block;
-    width: 22vw;
+    width: 36vw;
     border-radius: 10px;
     padding: 40px 30px;
-    margin: 0px auto;
+    margin: auto auto;
     box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgb(147 149 151 / 67%);
 }
+.remember_me span{
+    color: white;
+}
+.pic{
+    background-image: url(../My\ project-1\ \(2\).png);
+    height: 400px;
+    width: 100%;
+    background-size: contain;
+    
+}
+.pic2{
+    width: 99vw;
+    height: 54vh;
+    backdrop-filter: saturate(0.5) blur(5px);
+}
+
 #login_head{
    margin: 20px;
     display: block;
@@ -635,69 +673,57 @@ svg.bi.bi-geo-alt{
 }
 
 h1#signup_head{
+    margin: 20px;
     display: block;
-    font-size: 67px;
+    font-size: 70px;
     text-align: center;
     color: #BF9100;
 }
 .content .field{
-    height: 50px;
+   
     width: 100%;
-    display: flex;
+    
     position: relative;
   }
   
-  .field input{
-    height: 100%;
-    width: 100%;
-    padding-left: 45px;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    color: #e0d2d2;
-    border: 1px solid rgba(255, 255, 255, 0.438);
-    border-radius: 8px;
-    background: rgba(105, 105, 105, 0);
-  }
+  
 
-  .field input::placeholder{
+  /* .field input::placeholder{
     color: #e0d2d2a6;
   }
-  
-  .field:nth-child(2){
-    margin-top: 20px;
+  .form_inner form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
   }
+  form .field input:focus::placeholder{
+    color: #b3b3b3;
+  } */
   
+  /* .field:nth-child(2){
+    margin-top: 20px;
+  } */
+  .field.password_field{
+    margin-top: 50px;
+  }
   .field span{
-    margin-left: 15px;
+    bottom: 40px;
     position: absolute;
     width: 50px;
     line-height: 50px;
     color: #ffffff;
   }
-  button.sign_up_button,button.login_button{
-    margin: 25px 0 0 0;
-    width: 40%;
-    height: 50px;
-    color: #BF9100;
-    font-size: 18px;
-    font-weight: 600;
-    border: 2px solid rgba(255, 255, 255, 0.438);
-    border-radius: 8px;
-    background: rgba(105, 105, 105, 0);
-    margin-top: 40px;
-    outline: none;
-    cursor: pointer;
-    border-radius: 8px;
-   
+  .field.name_field span,.field.password_field span{
+    margin-left: 0px;
   }
   
-  button.login_button{
-    margin-right: 70px;
+  
+  .col-6.s{
+    display: none;
   }
- form{
-    margin-top: 30px;
- }
+
+  
+  
+ 
  body{
     background-position: center;
     background-repeat: no-repeat;
@@ -713,15 +739,18 @@ li.account_icon{
     margin-left: 190px;
 }
 
-.f button {
-    margin: 0px 20px;
-    width: fit-content;
-}
+
 .f{
-    padding: 30px;
+    float: left;
+   
     text-align: center;
 }
-
+.s{
+    float: right;
+}
+.field{
+    margin-top: 20px;
+}
 
 #navbar_logo:hover{
 transform: rotateY(180deg);
@@ -778,4 +807,251 @@ transition: all 4s;
 }
 #phone_div{
     margin-bottom: 20px;
+}
+.banner_content{
+    text-align: center;
+   
+}
+.banner_content h3{
+    display: inline-block;
+}
+.banner_content a{
+    text-transform: capitalize;
+    color: #BFBFBF;
+    transition: all 0.8s ;
+}
+.banner_content a:hover{
+    color: #262626;
+}
+.pic2 h1{
+    display: inline-block;
+    font-size: 50px;
+    margin: 90px;
+}
+.pic2{
+    text-align: center;
+}
+.container {
+    width: 99vw;
+    height: 90vh;
+}
+
+.col-6.s span{
+    width: 50px;
+    position: absolute;
+    left: 20px;
+    bottom: 41px;
+
+}
+::selection{
+    background: #fa4299;
+    color: #fff;
+  }
+  /* .wrapper{
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  } */
+   .title-text{
+    display: flex;
+    width: 200%;
+  }
+   .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+   .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+  .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .slide-controls label.signup{
+    color: #000;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+   background-color: #BF9100;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+  #signup:checked ~ label.login{
+    color: #000;
+  }
+  #login:checked ~ label.signup{
+    color: #000;
+  }
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+  }
+   .form-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner{
+    display: flex;
+    width: 200%;
+  }
+  .form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  /* .form-inner form .field input:focus{
+    border-color: #BF8100;
+    /* box-shadow: inset 0 0 3px #fb6aae;} */
+  
+  .form-inner form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder{
+    color: #b3b3b3;
+  }
+  .form-inner form .pass-link{
+    margin-top: 5px;
+  }
+  .form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+    color: #BF8100;
+    text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+   .btn-layer{
+   
+    width: 40%;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.438);
+    border-radius: 8px;
+    background-color: #BF8100;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+ 
+  form .btn:hover .btn-layer{
+    left: 0;
+  }
+  form .btn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .field.error input{
+    margin: 0px 0px 15px 0px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #e0d2d2;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    border-radius: 8px;
+    background: rgba(105, 105, 105, 0);
+}
+:root{
+    --success-color:#2ecc71;
+    --error-color: #e74c3c;
+}
+.form-inner form .field.error input{
+   border-color:  var(--error-color);
+}
+
+ small{
+    color: var(--error-color);
+    visibility: hidden;
+}
+.field.error small{
+
+    visibility: visible;
+}
+.form-inner form .field.success input{
+border-color: var(--success-color);
+}
+
+#form2 .field{
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
