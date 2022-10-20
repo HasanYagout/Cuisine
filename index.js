@@ -58,7 +58,7 @@ form2.addEventListener("submit",function(e)
     }
 
     if(password2.value===''){
-        showError(password2,'confirm password is required');
+        showError(password2,'Confirm password is required');
     }
     else{
         showSuccess(password2);
@@ -108,6 +108,29 @@ form.addEventListener("submit",function(e){
       signupBtn.click();
       return false;
     });
+
+    
+    window.addEventListener('scroll',reveal);
+    function reveal()
+    {
+    var reveals=document.querySelectorAll('.reveal');
+    for(var i=0;i<reveals.length;i++)
+    {
+      var windowheight=window.innerHeight;
+      var revealtop=reveals[i].getBoundingClientRect().top;
+      var revealpoint=150;
+      if(revealtop<windowheight -revealpoint)
+      {
+        reveals[i].classList.add('active');
+    
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    }
+    }
+
+   
 
 
 
