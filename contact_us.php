@@ -1,4 +1,4 @@
-
+<?php session_start() ?>
 
 <!DOCTYPE html>
 <html>
@@ -8,11 +8,13 @@
 
 
     <body>
-          
-          <div class='navbar' id='dropdownclick'>
+      <?php 
+       if($_SESSION['type']==0)
+       {
+          echo"<div class='navbar' id='dropdownclick'>
           <ul class='first_ul'>
             
-             <li class='navbar_links' ><a href='index.html'>home</a> </li>
+             <li class='navbar_links' ><a href='user_index.php'>home</a> </li>
              <li class='navbar_links' ><a href='#'>news</a> </li>
              <li class='navbar_links' ><a  href='#'>contact</a> </li>
              
@@ -20,20 +22,73 @@
            <img id='navbar_logo'src='logo.png'>
            <ul class='second_ul'>
               <li class='navbar_links' ><a href='#'>about</a> </li>
-              <li class='navbar_links'><a href='../Cuisine/shop.html'>shop</a></li>
+              <li class='navbar_links'><a href='../Cuisine/shop.php'>shop</a></li>
               <li class='dropdownicon'><a href='javascript:void(0);' onclick='list_button()'>&#9776;</a></li>
-              <li class='account_icon' ><a href='../Cuisine/index_login.php' ><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-person' viewBox='0 0 16 16'>
+              <li class='account_icon' ><a href='../Cuisine/login.php' ><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-person' viewBox='0 0 16 16'>
                <path d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z'/>
              </svg></a></li>
              <li class='cart_icon'><a href='#'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-cart' viewBox='0 0 16 16'>
               <path d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
             </svg></a></li>
+            <li><h1 class='name'>";echo $_SESSION['firstname']; echo"</h1></li>
+
            </ul>
         </div>
+        ";
+       }
+       else if($_SESSION['type']==1){
+        echo"<div class='navbar' id='dropdownclick'>
+          <ul class='first_ul'>
+            
+             <li class='navbar_links' ><a href='admin_index.php'>home</a> </li>
+             <li class='navbar_links' ><a href='#'>news</a> </li>
+             <li class='navbar_links' ><a  href='../Cuisine/contact_us.php'>contact</a> </li>
+             
+           </ul>
+           <img id='navbar_logo'src='logo.png'>
+           <ul class='second_ul'>
+              <li class='navbar_links' ><a href='#'>about</a> </li>
+              <li class='navbar_links'><a href='../Cuisine/manage.php'>manage</a></li>
+              <li class='dropdownicon'><a href='javascript:void(0);' onclick='list_button()'>&#9776;</a></li>
+              <li class='account_icon' ><a href='../Cuisine/login.php' ><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-person' viewBox='0 0 16 16'>
+               <path d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z'/>
+             </svg></a></li>
+             <li class='cart_icon'><a href='#'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-cart' viewBox='0 0 16 16'>
+              <path d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+            </svg></a></li>
+            <li><h1 class='name'>";echo $_SESSION['firstname']; echo"</h1></li>
+
+           </ul>
+        </div>
+        ";
+       }
       
-      
-      
-        
+      ?>
+        <!-- <div class="navbar" id="dropdownclick">
+            <img id="navbar_logo_responsive" src="logo.png">
+              <ul class="first_ul">
+                 
+                 <li class="navbar_links" ><a href="admin_index.html">home</a> </li>
+                 <li class="navbar_links" ><a href="#">news</a> </li>
+                 <li class="navbar_links" ><a  href="#">contact</a> </li>
+               </ul>
+               <img id="navbar_logo"src="logo.png">
+               <ul class="second_ul">
+                  <li class="navbar_links" ><a href="#">about</a> </li>
+                  <li class="navbar_links"><a href="../Cuisine/manage.php">manage</a></li>
+                  <a class="dropdownicon" href="javascript:void(0);" onclick="list_button()">&#9776;</a>
+                  <li class="account_icon" ><a id="accounticon" href="../Cuisine/login.php" ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                 </svg></a></li>
+                 <li class="cart_icon"><a href="#"><script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                  <lord-icon
+                      src="https://cdn.lordicon.com/cllunfud.json"
+                      trigger="hover"
+                      style="width:50px;height:50px">
+                  </lord-icon></a></li>
+               </ul>
+            </div> -->
+
             <div class="banner">
                 <div class="e" id="e">
                     <img src="../Cuisine/logo.png">

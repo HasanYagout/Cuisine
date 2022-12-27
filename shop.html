@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../Cuisine/stylesheet.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+        
+        
+        table, th, tr{
+            text-align: center;
+        }
+        .col-md-3{
+            width:33%;
+        }
+        .title2{
+            text-align: center;
+            color: #66afe9;
+            background-color: #efefef;
+            padding: 2%;
+        }
+        h3.title2{
+            margin-top: 200px;
+        }
+        
+        a:hover{
+            color: #BF8100;
+            text-decoration: none;
+            font-family: 'fredoka';
+        }
+        .note{
+            
+            color: red;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: #66afe9;
+            background-color: #efefef;
+            padding: 2%;
+        }
+        table th{
+            background-color: #efefef;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class='navbar' id='dropdownclick'>
+        <ul class='first_ul'>
+          
+           <li class='navbar_links' ><a href='index.html'>home</a> </li>
+           <li class='navbar_links' ><a href='#'>news</a> </li>
+           <li class='navbar_links' ><a  href='contact_us.html'>contact</a> </li>
+           
+         </ul>
+         <img id='navbar_logo'src='logo.png'>
+         <ul class='second_ul'>
+            
+            <li class='navbar_links' ><a href='#'>about</a> </li>
+            <li class='navbar_links'><a href='../Cuisine/shop.html'>shop</a></li>
+            <li class='dropdownicon'><a href='javascript:void(0);' onclick='list_button()'>&#9776;</a></li>
+            <li class='account_icon' ><a href='../Cuisine/index_login.php' ><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-person' viewBox='0 0 16 16'>
+             <path d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z'/>
+           </svg></a></li>
+           <li class='cart_icon'><a href='#'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-cart' viewBox='0 0 16 16'>
+            <path d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+          </svg></a></li>
+         </ul>
+      </div>
+    
+
+    <div class="shop_container" style="width: 65%">
+        <h2 class="shop_head">Shopping Cart</h2>
+    
+        <h1 class="note">Please Login to Shop</h1>
+
+        <div style="clear: both"></div>
+        <h3 class="title2">Shopping Cart Details</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+            <tr>
+                <th width="30%">Product Name</th>
+                <th width="10%">Quantity</th>
+                <th width="13%">Price Details</th>
+                <th width="10%">Total Price</th>
+                <th width="17%">Remove Item</th>
+            </tr>
+
+            
+               
+                    
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td>ريال  </td>
+                            <td>
+                                ريال  </td>
+                            <td><a href="shop.html"><span
+                                        class="text-danger">Remove Item</span></a></td>
+
+                        </tr>
+                       
+                    
+                        
+                        <tr>
+                            <td colspan="3" align="right">Total</td>
+                            <th align="right">ريال</th>
+                            <td></td>
+                        </tr>
+                        
+                  
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+</body>
+</html>

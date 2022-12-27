@@ -3,7 +3,10 @@ const username=document.getElementById("username");
 const password=document.getElementById("password");
 var checkbox=document.getElementById("checkbox");
 const email=document.getElementById("email");
+
 const form2=document.getElementById("form2");
+const register_firstname=document.getElementById("firstname");
+const register_lastname=document.getElementById("lastname");
 const register_username=document.getElementById("Register_username");
 const register_password=document.getElementById("Register_password");
 const password2=document.getElementById("password2");
@@ -12,7 +15,6 @@ function showError(input,message){
    field.className='field error';
    const small=field.querySelector('small');//method returns the first element that matches a CSS selector
     small.innerHTML=message;
-    
 }
 
 function showSuccess(input){ 
@@ -31,7 +33,6 @@ function isValidEmail(email)
 
 form2.addEventListener("submit",function(e)
 {
-    e.preventDefault();//clicking on a "Submit" button, prevent it from submitting a form
 
    
     // if(register_username.value===''){
@@ -41,6 +42,20 @@ form2.addEventListener("submit",function(e)
     //     showSuccess(register_username);
     // }
   
+    if(register_firstname.value==='')
+    {
+        showError(register_firstname,'You should enter your first name');
+    }
+    else{
+        showSuccess(register_firstname);
+    }
+    if(register_lastname.value==='')
+    {
+        showError(register_lastname,'You should enter your last name');
+    }
+    else{
+        showSuccess(register_lastname);
+    }
 
     if(register_password.value===''){
         showError(register_password,'Password is required');
@@ -68,7 +83,6 @@ form2.addEventListener("submit",function(e)
 
 
 form.addEventListener("submit",function(e){
-    e.preventDefault();//clicking on a "Submit" button, prevent it from submitting a form
 
    
     if(username.value===''){
@@ -131,6 +145,5 @@ form.addEventListener("submit",function(e){
     }
 
    
-
 
 

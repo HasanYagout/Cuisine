@@ -12,12 +12,15 @@
     height: 100%;
  }
  .navbar{
+    overflow: hidden;
+    display: flex;
     box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px 0 rgb(0 0 0 / 10%);
     text-align: center;
     height: 100px;
     width: 100%;
     background-color: #262626;
- }
+    justify-content: space-between;
+}
  img#navbar_logo_responsive {
     display: none;
 }
@@ -27,9 +30,11 @@
  .bi.bi-list{
     display: none;
  }
- ul.first_ul{
-    width: 40vw;
-    float: left;
+ ul.first_ul {
+  display: flex;
+  width: 40vw;
+  float: left;
+  justify-content: space-around;
 }
 div#r {
     width: 60vw;
@@ -110,20 +115,22 @@ div#button_div {
  
 
 
-ul.second_ul{
-    display: inline-block;
-    float: right;
-    width: 700px;
+ul.second_ul {
+  height: inherit;
+  display: flex;
+  float: right;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a{
+  font-family: 'fredoka';
     font-size: 20px;
-    font-weight: bold;
     color: #BF9100;
     text-decoration: none;
-   
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     
 }
 a.dropdownicon {
@@ -234,7 +241,8 @@ footer div.col-12{
 .col-12{
     
    
-    background-color: white;    height: 100%;
+    background-color: white;    
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,7 +338,7 @@ img.images:hover{
 }
 h2{
     color: #BF9100;
-    display: inline-block;
+    display: block;
 }
 svg.bi.bi-telephone-fill{
     display: inline-block;
@@ -366,6 +374,9 @@ em{
 .para2 a{
     
     
+}
+.user_div h6{
+color: white;
 }
 
 .para2 a:hover{
@@ -640,16 +651,18 @@ input[type="checkbox"] {
 }
 
 .content{
-    height: 80vh;
+    height: 90vh;
     background-color: white;
     overflow: hidden;
     display: block;
-    width: 36vw;
+    width: 35vw;
     border-radius: 10px;
     padding: 40px 30px;
     margin: auto auto;
     box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgb(147 149 151 / 67%);
+
 }
+
 .remember_me span{
     color: white;
 }
@@ -739,14 +752,23 @@ h1#signup_head{
 
 
 li.account_icon{
-    margin-left: 190px;
+    margin: 20px;
     margin-right: 0px;
+    position: relative;
+}
+lord-icon{
+  margin-bottom: 10px;
+}
+li.cart_icon {
+position: relative;
+margin: 20px;
 }
 
 
+
+
 .f{
-    float: left;
-   
+    padding: 30px;
     text-align: center;
 }
 .s{
@@ -835,16 +857,20 @@ transition: all 4s;
 .pic2{
     text-align: center;
 }
-.container {
-    width: 99vw;
+.fotter_container {
+    width: 88vw;
+    margin: 0px auto;
     
 }
 
 .container2 {
    
     width: 99vw;
-    height: 90vh;
-    
+    height: 99vh;
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-6.s span{
@@ -924,6 +950,7 @@ transition: all 4s;
     cursor: default;
     user-select: none;
   }
+  
   #signup:checked ~ label.login{
     color: #000;
   }
@@ -1092,12 +1119,13 @@ transition: all 2s ease;
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+    height: 99vh;
 }
 
 
 .e img{
     width: 200px;
-        transform: skewX(20deg);
+       
     margin-left: 220px;
 }
 .location{
@@ -1106,3 +1134,336 @@ transition: all 2s ease;
 .location h2{
     color: white;
 }
+.e div{
+    transform: skewX(20deg);
+}
+.phone svg.bi.bi-telephone-fill{
+    margin-left: 70px;
+    color:#BF8100 ; 
+    vertical-align: middle;
+    width: 3vw;
+    margin-right: 20px;
+}
+.e a{
+    color: white;
+}
+
+.email svg.bi.bi-envelope{
+    margin-left: 110px;
+    width: 3vw;
+    vertical-align: middle;
+    color: #BF8100;
+    margin-right: 20px;
+}
+.boxes div.col-4{
+    display: inline-block;
+    position: relative;
+    top: -60px;
+}
+.boxes{
+    display: flex;
+}
+
+
+.boxes div.col-4 h1{
+    color: #BF8100;
+    font-size: 40px;
+}
+
+.boxes div.col-4 img{
+    width: 60px;
+    margin-top: 80px;
+}
+.footer{
+    position: relative;
+    top: 300px;
+}
+
+.banner{
+  background-image: url(../Cuisine/img/Quick\ Guide\ to\ Every\ Herb\ and\ Spice\ in\ the\ Cupboard.jfif);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.form-inner form #firstname_field.field {
+    width: 45%;
+    display: inline-block;
+}
+.form-inner form #lastname_field.field {
+    width: 45%;
+    display: inline-block;
+    float: right;
+}
+
+/* registration */
+
+
+
+.container{
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+  }
+  .container .cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+  }
+  .container #flip:checked ~ .cover{
+    transform: rotateY(-180deg);
+  }
+   .container .cover .front,
+   .container .cover .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .cover .back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .container .cover::before,
+  .container .cover::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #BF8100;
+    opacity: 0.5;
+    z-index: 12;
+  }
+  .container .cover::after{
+    opacity: 0.3;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .container .cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+  }
+  .container .cover .text{
+    position: absolute;
+    z-index: 130;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1.name {
+    width: 100px;
+    font-size: 20px;
+    color: white;
+}
+h1.name:hover{
+text-decoration: none;
+
+}
+li.navbar_links:hover{
+  text-decoration: none;
+}
+  .cover .text .text-1,
+  .cover .text .text-2{
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }
+  .cover .text .text-2{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .container .forms{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+  }
+  .container .form-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: calc(100% / 2 - 25px);
+  }
+  .forms .form-content .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+  .forms .form-content .title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #7d2ae8;
+  }
+  .forms .signup-form  .title:before{
+    width: 20px;
+  }
+  .forms .form-content .fieldes{
+    margin-top: 30px;
+  }
+  .forms .form-content .field{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+  }
+  .form-content .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  .form-content .field input:focus,
+  .form-content .field input:valid{
+    border-color: #BF8100;
+  }
+  .form-content .field i{
+    position: absolute;
+    color: #BF8100;
+    font-size: 17px;
+  }
+  .forms .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  .forms .form-content .text a{
+    text-decoration: none;
+  }
+  .forms .form-content .text a:hover{
+    text-decoration: underline;
+  }
+  .forms .form-content .button{
+    color: #fff;
+    margin-top: 40px;
+  }
+  .forms .form-content .button input{
+    color: #fff;
+    background: #BF8100;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .forms .form-content .button input:hover{
+    background: #BF8100;
+  }
+  .forms .form-content label{
+    color: #BF8100;
+    cursor: pointer;
+  }
+  .forms .form-content label:hover{
+    text-decoration: underline;
+  }
+  .forms .form-content .login-text,
+  .container2 .forms .form-content .sign-up-text{
+    text-align: center;
+    margin-top: 25px;
+  }
+  .container #flip{
+    display: none;
+  }
+
+/* manage page table */
+
+.products{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.products td, .products th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+  .products tr:nth-child(even){background-color: #f2f2f2;}
+
+.products tr:hover {background-color: #ddd;}
+    
+.products th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #262626;
+  color: #BF8100;
+
+}
+
+/* shop table */
+
+h2.shop_head {
+  color: #BF8100;
+  display: block;
+}
+
+.navbar a{
+  color: #BF8100;
+}
+h3.title2{
+  color: #BF8100;
+}
+.shop_container{
+margin: auto;
+}
+
+span{
+  font-size: 14px;
+  text-transform: capitalize  ;
+}
+  @media (max-width: 730px) {
+    .container .cover{
+      display: none;
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+      width: 100%;
+    }
+    .container2 .form-content .signup-form{
+      display: none;
+    }
+    .container2 .container #flip:checked ~ .forms .signup-form{
+      display: block;
+    }
+    .container #flip:checked ~ .forms .login-form{
+      display: none;
+    }
+
+  
+    .upload img {
+      border-radius: 50%;
+      border: 8px solid #DCDCDC;
+  }
+
+    
+  }
